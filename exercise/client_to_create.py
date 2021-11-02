@@ -4,7 +4,7 @@ import order_pb2_grpc
 
 print("Sending request to Server......")
 
-channel = grpc.insecure_channel('localhost:5001')
+channel = grpc.insecure_channel('localhost:5002')
 stub = order_pb2_grpc.OrderServiceStub(channel)
 
 order = order_pb2.OrderMessage(

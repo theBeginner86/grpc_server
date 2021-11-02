@@ -48,8 +48,8 @@ class OrderServicer(order_pb2_grpc.OrderServiceServicer):
 server = grpc.server(futures.ThreadPoolExecutor(max_workers=2))
 order_pb2_grpc.add_OrderServiceServicer_to_server(OrderServicer(), server)
 
-print('Server starting at 5001...')
-server.add_insecure_port('[::]:5001')
+print('Server (excercise) starting at 5002...')
+server.add_insecure_port('[::]:5002')
 server.start()
 
 try :
