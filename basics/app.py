@@ -24,7 +24,7 @@ server = grpc.server(futures.ThreadPoolExecutor(max_workers=3))
 item_pb2_grpc.add_ItemServiceServicer_to_server(ItemService(), server)
 
 
-print('Server starting on port 5001')
+print('Server (basics) starting on port 5001')
 server.add_insecure_port('[::]:5001')
 server.start()
 try:
