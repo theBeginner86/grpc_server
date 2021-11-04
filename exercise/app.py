@@ -52,7 +52,7 @@ print('Server (excercise) starting at 5002...')
 server.add_insecure_port('[::]:5002')
 server.start()
 
-try :
+try:
     while True:
         time.sleep(86400)
 except KeyboardInterrupt:
